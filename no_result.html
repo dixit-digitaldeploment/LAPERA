@@ -76,7 +76,8 @@
 									<a class="nav-link" href="#">Employers</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Job Seekers</a>
+									<a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Job
+										Seekers</a>
 									<ul class="dropdown-menu" aria-label="">
 										<li><a href="#">lorem </a> </li>
 										<li>
@@ -157,126 +158,11 @@
 			<h1>Search Result</h1>
 		</div>
 		<div class="resultWraper">
-			<div class="resultmain ">
-				<div class="main_search">
-					<span class="h5">Showing results for “search term” (89 results found)</span>
-					<div class="main_search_content">
-						<div class="search_box">
-							<img src="img/result-search.png" alt="search">
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<div class="resull_filter row no-margin">
-				<div class="container">
-					<div class="row">
-						<!-- Filter Column -->
-						<div class="col-lg-3 col-md-4 col-le">
-							<div class="searchFilterBlock">
-								<div class="filterBlock">
-									<div class="d-flex align-items-center justify-content-between">
-										<p class="h4">Filters</p>
-										<a href="https://dev-san-joaquin-2025.pantheonsite.io/?s=4" class="reset">
-											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-												<path
-													d="M14.7828 6.28125C15.0766 5.9875 15.0766 5.5125 14.7828 5.22187C14.4891 4.93125 14.0141 4.92812 13.7234 5.22187L10.0047 8.94062L6.28281 5.21875C5.98906 4.925 5.51406 4.925 5.22344 5.21875C4.93281 5.5125 4.92969 5.9875 5.22344 6.27812L8.94219 9.99687L5.22031 13.7187C4.92656 14.0125 4.92656 14.4875 5.22031 14.7781C5.51406 15.0687 5.98906 15.0719 6.27969 14.7781L9.99844 11.0594L13.7203 14.7812C14.0141 15.075 14.4891 15.075 14.7797 14.7812C15.0703 14.4875 15.0734 14.0125 14.7797 13.7219L11.0609 10.0031L14.7828 6.28125Z"
-													fill="#202020"></path>
-											</svg> Clear Filters</a>
-
-									</div>
-
-									<form class="search-filter-form">
-										<!-- Post Type Filter -->
-										<div class="form-group">
-											<label class="title" for="post_type">Category</label>
-											<div class="checkboxes">
-												<label class="title" for="pt-post">
-													<input type="checkbox" class="form-control" id="pt-post" name="pt-post">
-													News (1) </label>
-												<label class="title" for="pt-tribe_events">
-													<input type="checkbox" class="form-control" id="pt-tribe_events" name="pt-tribe_events">
-													Events (4) </label>
-											</div>
-										</div>
-
-										<!-- Document Type Filter -->
-										<div class="form-group">
-											<label class="title" for="date">Date</label>
-											<select name="date" id="date" class="form-control">
-												<option value="any_time">Any Time</option>
-											</select>
-										</div>
-
-										<!-- Document Type Filter -->
-										<div class="form-group">
-											<label class="title" for="docs_type">Document Type</label>
-											<div class="checkboxes filter-group document-type-filter">
-												<label class="title" for="dt-webpage">
-													<input type="checkbox" class="form-control" name="dt-webpage" id="dt-webpage">
-													Webpages </label>
-												<label class="title" for="dt-pdf">
-													<input type="checkbox" class="form-control" name="dt-pdf" id="dt-pdf">
-													PDFs </label>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-						<!-- Results Column -->
-						<div class="col-lg-9 col-md-8 col-re">
-							<div class="filterBlocks">
-								<div class="title-sort d-flex justify-content-between align-items-end">
-									<div class="more-title">
-										<span>Showing 89 results for “search term”</span>
-									</div>
-									<div class="sort_boxResult" id="sortBox">
-										<label class="visually-hidden" for="sortSelect">Sort results</label>
-										<select id="sortSelect" class="form-control" name="sort">
-											<option value="">Sort</option>
-											<option value="all">All</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-										</select>
-									</div>
-								</div>
-								<!-- Results -->
-								<div class="result_row">
-									<a href="#">
-										<div class="rsltBody">
-											<div class="re_category">
-												Content Type
-											</div>
-											<h3>Title</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie aliquam erat, ut
-												accumsan turpis placerat sed. Donec dapibus nisl ut pellentesque suscipit.
-											</p>
-										</div>
-									</a>
-								</div>
-								<div class="result_row">
-									<a href="#">
-										<div class="rsltBody">
-											<div class="re_category">
-												Content Type
-											</div>
-											<h3>Title</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie aliquam erat, ut
-												accumsan turpis placerat sed. Donec dapibus nisl ut pellentesque suscipit.
-											</p>
-										</div>
-									</a>
-								</div>
-							</div>
-							<!-- Pagination -->
-							<div class="pagination justify-content-center" role="navigation" aria-label="Pagination">
-								<img src="img/pagination.png" alt="Pagination Navigation">
-							</div>
-						</div>
-					</div>
+			<div class="main_search_content no_result">
+				<p class="h4" style="text-align: center;"> No results found.</p>
+				<p>We can’t find item matching your search.</p>
+				<div class="search_box">
+					<img src="img/result-search.png" alt="search">
 				</div>
 			</div>
 		</div>

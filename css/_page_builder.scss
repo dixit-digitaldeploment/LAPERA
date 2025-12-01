@@ -1254,52 +1254,73 @@ h2 + .expand_img_grid {
 
 // ===== Kadence Tabs  Ends =====
 // ===== Kadence Table  Starts =====
+.wp-block-kadence-table {
+    max-height: 513px;
+    // overflow-y: auto;
+}
 .kb-table {
     width: 100%;
     thead {
         th {
             background: $primary;
-            font-family: "Proxima Nova Th";
+            font-family: $primary-font;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 15px;
             color: #fff;
-            padding: 15px 24px !important;
-            border-right: 1px solid #fff;
+            padding: 16px !important;
+            border-right: 1px solid #E1E0E0;
             p {
-                font-family: "Proxima Nova Th";
+                font-family: $primary-font;
                 font-weight: bold;
-                font-size: 18px;
+                font-size: 16px;
                 color: #fff;
                 margin-bottom: 0px;
             }
-            &:first-child {
-                border-radius: 5px 0px 0px 0px;
-            }
-            &:last-child {
-                border-radius: 0px 5px 0px 0px;
-            }
+            // &:first-child {
+            //     border-radius: 5px 0px 0px 0px;
+            // }
+            // &:last-child {
+            //     border-radius: 0px 5px 0px 0px;
+            // }
         }
     }
     tbody {
         td {
-            padding: 15px 24px !important;
+            padding: 16px !important;
             background: #efefef;
-            border-right: 1px solid #504d49;
+            border: 1px solid #E1E0E0;
+            font-weight: 700;
             p {
                 margin: 0px;
+                font-weight: 700;
+            }
+            a{
+                font-weight: 400;
+            }
+        }
+        tr:nth-child(2n + 1) {
+            td{
+
+                background: #F5F5F5 !important;
+            }
+        }
+        tr:nth-child(2n) {
+            td{
+
+                background: #fff !important;
             }
         }
         tr:last-child {
-            td:first-child {
-                border-radius: 0px 0px 5px 5px;
-            }
-            td:last-child {
-                border-radius: 0px 0px 5px 5px;
-            }
+            // td:first-child {
+            //     border-radius: 0px 0px 5px 5px;
+            // }
+            // td:last-child {
+            //     border-radius: 0px 0px 5px 5px;
+            // }
         }
         tr {
             td:last-child {
-                border: 0;
+                // border: 0;
             }
         }
     }
