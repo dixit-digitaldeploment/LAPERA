@@ -43,6 +43,9 @@
     .caption_wrap {
         display: flex;
         justify-content: center;
+        @media (max-width: 767px) {
+            height: 85vh;
+        }
     }
     .carousel-caption {
         position: absolute;
@@ -82,9 +85,9 @@
             margin-top: 15px;
         }
         @include md {
-            text-align: left;
+            text-align: center;
             h1 {
-                font-size: 36px;
+                // font-size: 36px;
             }
         }
         @media (min-width: 768px) {
@@ -104,7 +107,7 @@
         z-index: 10;
         &:hover {
             // background: $secondary;
-            img{
+            img {
                 filter: invert(47%) sepia(90%) saturate(3087%) hue-rotate(185deg) brightness(101%) contrast(92%);
             }
         }
@@ -193,6 +196,7 @@
     .btn_card {
         padding: 24px;
         background: #015fc9;
+        height: 100%;
         .btn_icon {
             width: 72px;
             height: 72px;
@@ -206,6 +210,9 @@
             // margin-right: 16px;
             border-radius: 50%;
             border: 2px solid var(--White, #fff);
+            i{
+                font-size: 32px;
+            }
             @include md {
                 // width: 30px;
                 // height: 30px;
@@ -223,6 +230,8 @@
             text-align: center;
             color: $white;
             font-family: $primary-font;
+            max-width: 270px;
+            margin: auto;
         }
         p {
             color: $white;
@@ -325,11 +334,16 @@
             padding: 32px 0;
             left: unset;
             right: unset;
+            align-self: center;
             h2 {
-                // font-size: 38px;
+                font-size: 36px;
+                font-weight: 500;
                 span {
                     // font-size: 28px;
                 }
+            }
+            p {
+                font-size: 18px;
             }
         }
     }

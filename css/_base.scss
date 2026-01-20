@@ -6,6 +6,14 @@ body {
     &.wp-admin {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
             "Helvetica Neue", sans-serif;
+        .icon-selector .acf-icon-list {
+            background-color: $primary !important;
+        }
+        .editor-styles-wrapper {
+            .wp-block-post-title {
+                max-width: initial;
+            }
+        }
     }
 }
 
@@ -322,7 +330,7 @@ video {
 }
 
 select {
-    min-height: 45px;
+    min-height: 50px;
     background-image: url(../img/select-arrow.svg);
     background-repeat: no-repeat;
     -webkit-appearance: none;
@@ -336,7 +344,7 @@ select {
     &.form-control {
         color: #555554;
         cursor: pointer;
-        min-height: 45px;
+        min-height: 50px;
     }
 }
 
@@ -351,6 +359,32 @@ input[type="checkbox"] {
     &:checked {
         background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M10.0705 3.13127C10.2467 3.30752 10.2467 3.59252 10.0705 3.7669L5.12047 8.71877C4.94422 8.89502 4.65922 8.89502 4.48484 8.71877L1.93297 6.16877C1.75672 5.99252 1.75672 5.70752 1.93297 5.53315C2.10922 5.35877 2.39422 5.3569 2.56859 5.53315L4.79984 7.7644L9.43297 3.13127C9.60922 2.95502 9.89422 2.95502 10.0686 3.13127H10.0705Z" fill="%23052E70"/></svg>');
         background-size: contain;
+        &::before {
+            display: none !important;
+        }
+    }
+}
+input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    appearance: none;
+    border: 1px solid var(--Black---70, #222) !important;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:checked::after {
+        content: "";
+        width: 9px;
+        height: 9px;
+        display: block;
+        background: #052e70;
+        border-radius: 50%;
+        margin: auto;
+    }
+    &::before {
+        display: none !important;
     }
 }
 .checkboxes {
@@ -400,6 +434,19 @@ label.title {
     margin-bottom: 2px;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #d9d9d9;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #606060;
+    border-radius: 20px;
+}
 ::-webkit-input-placeholder {
     color: #36393f !important;
     opacity: 1 !important;
@@ -426,4 +473,18 @@ label.title {
     opacity: 1 !important;
     font-size: 14px !important;
     font-weight: normal !important;
+}
+
+.reset {
+    font-size: 16px;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &:hover {
+        text-decoration: underline;
+        svg{
+            filter: brightness(0) saturate(100%) invert(28%) sepia(88%) saturate(2780%) hue-rotate(192deg) brightness(94%) contrast(101%);
+        }
+    }
 }
